@@ -1,0 +1,42 @@
+{
+  "name": "is-path-from-ancestor",
+  "version": "0.0.0",
+  "description": "Check if one path starts with parent directory reference",
+  "repository": "shinnn/node-is-path-from-ancestor",
+  "author": {
+    "name": "Shinnosuke Watanabe",
+    "url": "https://github.com/shinnn"
+  },
+  "scripts": {
+    "pretest": "eslint *.js & jscs *.js",
+    "test": "node test.js | tap-spec",
+    "coverage": "istanbul cover test.js",
+    "coveralls": "${npm_package_scripts_coverage} && istanbul-coveralls"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/shinnn/node-is-path-from-ancestor/blob/master/LICENSE"
+    }
+  ],
+  "files": [
+    "index.js",
+    "LICENSE"
+  ],
+  "keywords": [
+    "string",
+    "path",
+    "relative",
+    "parent",
+    "ancestor"
+  ],
+  "devDependencies": {
+    "eslint": "^0.8.0",
+    "istanbul": "^0.3.2",
+    "istanbul-coveralls": "^1.0.0",
+    "jscs": "^1.6.1",
+    "require-main": "^0.1.1",
+    "tap-spec": "^0.2.1",
+    "tape": "^2.14.0"
+  }
+}
