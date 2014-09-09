@@ -24,7 +24,7 @@ test('isPathFromAncestor', function(t) {
   );
 
   t.throws(
-    isPathFromAncestor.bind(null, ['foo']), /TypeError/,
+    isPathFromAncestor.bind(null, ['foo']), /is not a string/,
     'should throw a type error when the argument is not a string.'
   );
 });

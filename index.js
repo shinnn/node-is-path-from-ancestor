@@ -8,5 +8,9 @@
 var path = require('path');
 
 module.exports = function isPathFromAncestor(str) {
+  if (typeof str !== 'string') {
+    throw new TypeError(str + ' is not a string.');
+  }
+
   return path.normalize(str).indexOf('..' + path.sep) === 0;
 };
