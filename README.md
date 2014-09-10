@@ -1,6 +1,6 @@
 # is-path-from-ancestor
 
-[![NPM version](https://badge.fury.io/js/is-path-from-ancestor.svg)](http://badge.fury.io/js/is-path-from-ancestor)
+[![NPM version](https://badge.fury.io/js/is-path-from-ancestor.svg)](https://www.npmjs.org/package/is-path-from-ancestor)
 [![Build Status](https://travis-ci.org/shinnn/node-is-path-from-ancestor.svg?branch=master)](https://travis-ci.org/shinnn/node-is-path-from-ancestor)
 [![Build status](https://ci.appveyor.com/api/projects/status/w7qwspaik2ad94vl)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-is-path-from-ancestor)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/node-is-path-from-ancestor.svg)](https://coveralls.io/r/shinnn/node-is-path-from-ancestor)
@@ -12,11 +12,11 @@ A [Node][node] module to check if one path starts with parent directory referenc
 var isPathFromAncestor = require('is-path-from-ancestor');
 
 // On *nix
-isPathFromAncestor('../foo'); // true
-isPathFromAncestor('foo'); // false
+isPathFromAncestor('../foo'); //=> true
+isPathFromAncestor('foo'); //=> false
 
 // On Windows
-isPathFromAncestor('..\\foo'); // true
+isPathFromAncestor('..\\foo'); //=> true
 ```
 
 ## Installation
