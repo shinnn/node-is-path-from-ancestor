@@ -1,17 +1,17 @@
-'use strict';
+'use strong';
 
-var sep = require('path').sep;
+const sep = require('path').sep;
 
-var isPathFromAncestor = require('./');
-var test = require('tape');
+const isPathFromAncestor = require('./');
+const test = require('tape');
 
-test('isPathFromAncestor', function(t) {
-  t.plan(5);
+test('isPathFromAncestor', t => {
+  t.plan(6);
 
   t.equal(isPathFromAncestor.name, 'isPathFromAncestor', 'should have a function name.');
 
   t.strictEqual(
-    isPathFromAncestor('..' + sep),
+    isPathFromAncestor(`..${sep}`),
     true,
     'should return true when the path starts with ancestor reference.'
   );
@@ -23,14 +23,20 @@ test('isPathFromAncestor', function(t) {
   );
 
   t.strictEqual(
-    isPathFromAncestor('foo' + sep + '..' + sep),
+    isPathFromAncestor(`foo${sep}..${sep}`),
     false,
     'should normalize the path before checking.'
   );
 
   t.throws(
-    isPathFromAncestor.bind(null, ['foo']),
+    () => isPathFromAncestor(['foo']),
     /TypeError.* is not a string/,
     'should throw a type error when it takes a non-string argument.'
+  );
+
+  t.throws(
+    () => isPathFromAncestor(),
+    /TypeError/,
+    'should throw a type error when it takes no arguments.'
   );
 });

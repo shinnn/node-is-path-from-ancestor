@@ -9,7 +9,7 @@
 A [Node](https://nodejs.org/) module to check if a given path starts with parent directory reference
 
 ```javascript
-var isPathFromAncestor = require('is-path-from-ancestor');
+const isPathFromAncestor = require('is-path-from-ancestor');
 
 // On POSIX
 isPathFromAncestor('../foo'); //=> true
@@ -30,7 +30,7 @@ npm install is-path-from-ancestor
 ## API
 
 ```javascript
-var isPathFromAncestor = require('is-path-from-ancestor');
+const isPathFromAncestor = require('is-path-from-ancestor');
 ```
 
 ### isPathFromAncestor(*path*)
@@ -38,7 +38,7 @@ var isPathFromAncestor = require('is-path-from-ancestor');
 *path*: `String`  
 Return: `Boolean`
 
-It returns `true` if *path* starts with `../` (*nix) or `..\\` (Windows), otherwise returns `false`.
+It returns `true` if *path* starts with `../` (POSIX) or `..\\` (Windows), otherwise returns `false`.
 
 It [normalizes](https://nodejs.org/api/path.html#path_path_normalize_p) the path before checking. 
 
