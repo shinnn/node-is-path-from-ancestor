@@ -5,4 +5,4 @@ install:
   - ps: Install-Product node 4
   - npm install tape
 build: off
-test_script: node --strong_mode test.js
+test_script: node --strong_mode --harmony_destructuring test.js

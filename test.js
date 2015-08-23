@@ -1,9 +1,9 @@
 'use strong';
 
-const sep = require('path').sep;
+const {sep} = require('path');
 
 const isPathFromAncestor = require('./');
-const test = require('tape');
+const {test} = require('tape');
 
 test('isPathFromAncestor', t => {
   t.plan(6);
