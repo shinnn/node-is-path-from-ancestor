@@ -1,6 +1,6 @@
 {
   "name": "is-path-from-ancestor",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Check if a given path starts with parent directory reference",
   "repository": "shinnn/node-is-path-from-ancestor",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
