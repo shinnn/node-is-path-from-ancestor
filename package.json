@@ -5,9 +5,9 @@
   "repository": "shinnn/node-is-path-from-ancestor",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "pretest": "eslint --config @shinnn/node index.js test.js",
     "test": "node --strong_mode test.js",
     "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
+    "pretest": "eslint --fix --config @shinnn/node index.js test.js",
   },
   "license": "MIT",
   "files": [
@@ -21,9 +21,9 @@
     "ancestor"
   ],
   "devDependencies": {
-    "@shinnn/eslint-config-node": "^1.0.1",
-    "eslint": "^1.6.0",
-    "istanbul": "^0.3.22",
-    "tape": "^4.2.1"
+    "@shinnn/eslint-config-node": "^3.0.0",
+    "eslint": "^3.4.0",
+    "istanbul": "^0.4.5",
+    "tape": "^4.6.0"
   }
 }
