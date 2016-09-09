@@ -30,13 +30,13 @@ test('isPathFromAncestor', t => {
 
   t.throws(
     () => isPathFromAncestor(['foo']),
-    /TypeError.* is not a string/,
+    /^TypeError.*\[ 'foo' \] is not a string/,
     'should throw a type error when it takes a non-string argument.'
   );
 
   t.throws(
     () => isPathFromAncestor(),
-    /TypeError/,
+    /^TypeError/,
     'should throw a type error when it takes no arguments.'
   );
 });
