@@ -5,9 +5,9 @@
   "repository": "shinnn/node-is-path-from-ancestor",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "test": "node --strong_mode test.js",
-    "coverage": "node --strong_mode node_modules/.bin/istanbul cover test.js"
     "pretest": "eslint --fix --config @shinnn/node index.js test.js",
+    "test": "node test.js",
+    "coverage": "istanbul cover test.js"
   },
   "license": "MIT",
   "files": [
