@@ -5,7 +5,7 @@
   "repository": "shinnn/node-is-path-from-ancestor",
   "author": "Shinnosuke Watanabe (https://github.com/shinnn)",
   "scripts": {
-    "pretest": "eslint --fix --config @shinnn/node index.js test.js",
+    "pretest": "eslint --fix --format=codeframe index.js test.js",
     "test": "node test.js",
     "coverage": "istanbul cover test.js"
   },
@@ -22,8 +22,11 @@
   ],
   "devDependencies": {
     "@shinnn/eslint-config-node": "^3.0.0",
-    "eslint": "^3.4.0",
+    "eslint": "^3.19.0",
     "istanbul": "^0.4.5",
-    "tape": "^4.6.0"
+    "tape": "^4.6.3"
+  },
+  "eslintConfig": {
+    "extends": "@shinnn/node"
   }
 }
