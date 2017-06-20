@@ -1,8 +1,4 @@
-/*!
- * is-path-from-ancestor | MIT (c) Shinnosuke Watanabe
- * https://github.com/shinnn/node-is-path-from-ancestor
-*/
-'use strong';
+'use strict';
 
 const path = require('path');
 const util = require('util');
