@@ -34,8 +34,8 @@ const isPathFromAncestor = require('is-path-from-ancestor');
 
 ### isPathFromAncestor(*path*)
 
-*path*: `String`  
-Return: `Boolean`
+*path*: `string`  
+Return: `boolean`
 
 It returns `true` if *path* starts with `../` (POSIX) or `..\\` (Windows), otherwise returns `false`.
 

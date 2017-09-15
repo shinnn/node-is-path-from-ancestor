@@ -19,9 +19,12 @@
     "parent",
     "ancestor"
   ],
+  "dependencies": {
+    "inspect-with-kind": "^1.0.2"
+  },
   "devDependencies": {
     "@shinnn/eslint-config-node": "^4.0.2",
-    "eslint": "^4.5.0",
+    "eslint": "^4.6.1",
     "istanbul": "^0.4.5",
     "tape": "^4.8.0"
   },

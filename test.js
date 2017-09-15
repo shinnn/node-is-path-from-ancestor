@@ -30,7 +30,7 @@ test('isPathFromAncestor', t => {
 
   t.throws(
     () => isPathFromAncestor(['foo']),
-    /^TypeError.*\[ 'foo' \] is not a string/,
+    /^TypeError.*Expected a file path.*but got \[ 'foo' ] \(array\)\./,
     'should throw a type error when it takes a non-string argument.'
   );
 

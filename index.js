@@ -1,15 +1,18 @@
 'use strict';
 
 const path = require('path');
-const util = require('util');
+
+const normalize = path.normalize;
+const sep = path.sep;
+
+const inspectWithKind = require('inspect-with-kind');
 
 module.exports = function isPathFromAncestor(str) {
   if (typeof str !== 'string') {
-    throw new TypeError(
-      util.inspect(str) +
-      ' is not a string. The first argument to is-path-from-ancestor must be a file path.'
-    );
+    throw new TypeError(`Expected a file path (<string>) to check if it starts with parent directory reference (..), but got ${
+      inspectWithKind(str)
+    }.`);
   }
 
-  return path.normalize(str).indexOf('..' + path.sep) === 0;
+  return normalize(str).indexOf('..' + sep) === 0;
 };
