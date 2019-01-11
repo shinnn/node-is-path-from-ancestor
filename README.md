@@ -2,7 +2,6 @@
 
 [![npm version](https://img.shields.io/npm/v/is-path-from-ancestor.svg)](https://www.npmjs.com/package/is-path-from-ancestor)
 [![Build Status](https://travis-ci.com/shinnn/node-is-path-from-ancestor.svg?branch=master)](https://travis-ci.com/shinnn/node-is-path-from-ancestor)
-[![Build status](https://ci.appveyor.com/api/projects/status/w7qwspaik2ad94vl?svg=true)](https://ci.appveyor.com/project/ShinnosukeWatanabe/node-is-path-from-ancestor)
 [![Coverage Status](https://img.shields.io/coveralls/shinnn/node-is-path-from-ancestor.svg)](https://coveralls.io/github/shinnn/node-is-path-from-ancestor)
 
 A [Node.js](https://nodejs.org/) module to check if a given path starts with parent directory reference
