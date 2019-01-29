@@ -1,6 +1,6 @@
 {
 	"name": "is-path-from-ancestor",
-	"version": "2.0.2",
+	"version": "2.0.3",
 	"description": "Check if a given path starts with parent directory reference",
 	"repository": "shinnn/node-is-path-from-ancestor",
 	"author": "Shinnosuke Watanabe (https://github.com/shinnn)",
@@ -24,7 +24,7 @@
 	},
 	"devDependencies": {
 		"@shinnn/eslint-config": "^6.8.9",
-		"eslint": "^5.12.0",
+		"eslint": "^5.12.1",
 		"nyc": "^13.1.0",
 		"nyc-config-common": "^1.0.1",
 		"tape": "^4.9.2"
